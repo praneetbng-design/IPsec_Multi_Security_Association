@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #17233d;
+  background: #fff4d6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --cream: #fff4d6;
+  --cream-light: #fff9ea;
+
+  --navy: #233a66;
+  --navy-dark: #182b4d;
+  --navy-light: #304a7a;
+
+  --gold: #d7a859;
+  --gold-light: #ffdfa0;
+
+  --coral: #ff6e80;
+  --coral-dark: #e85669;
+
+  --white: #ffffff;
+  --text: #17233d;
+  --muted: #68738a;
+
+  --success: #35b98a;
+  --warning: #e5a93d;
+  --danger: #e85b68;
+
+  --border-light: rgba(35, 58, 102, 0.12);
+  --shadow: 0 12px 35px rgba(35, 58, 102, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(215, 168, 89, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(255, 110, 128, 0.08),
+      transparent 30%
+    ),
+    var(--cream);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(35, 58, 102, 0.25);
+  border-radius: 20px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--navy-dark);
+}

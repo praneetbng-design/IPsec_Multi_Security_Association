@@ -1,0 +1,5 @@
+import { ShieldAlert, Lock, Unlock } from 'lucide-react';
+import GlassCard from '../components/GlassCard';
+export default function AttackLab({ goLive }) {
+ return <div className="content-page"><span className="card-label">SECURITY DEMONSTRATION</span><h2 className="page-title">Attack Lab</h2><p className="page-subtitle">Run the same transmission with interception/tampering enabled to show why protection matters.</p><div className="attack-demo-grid"><GlassCard><ShieldAlert size={30}/><h3>Insecure interception</h3><p>The attacker can read plaintext because no encryption is applied.</p><button className="gold-button" onClick={goLive}>Open Live Attack Simulation →</button></GlassCard><GlassCard><Lock size={30}/><h3>Protected tampering</h3><p>The attacker can alter the simulated ciphertext, but HMAC verification detects the modification and rejects the packet.</p><button className="secondary-action" onClick={goLive}>Test it live</button></GlassCard></div><GlassCard className="attack-note"><Unlock size={20}/><strong>This is a controlled educational simulation.</strong><span>It does not attack a real network or intercept real traffic.</span></GlassCard></div>
+}
